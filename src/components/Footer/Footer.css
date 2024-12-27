@@ -1,0 +1,22 @@
+.footer-section {
+  display: flex; /* Enable Flexbox */
+  height: 209px;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically (if footer has more height) */
+  padding: 20px; /* Add some spacing inside the footer */
+  background-color: #000; /* Optional: Set background color for the footer */
+  color: #fff; /* Set text color for the footer text */
+  text-align: center; /* Center-align text inside the footer */
+}
+
+.footer-logo {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.footer-text {
+  font-size: 1rem;
+  margin-top: 30px;
+  width: 513px;
+}/*# sourceMappingURL=Footer.css.map */

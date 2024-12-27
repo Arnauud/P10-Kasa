@@ -1,0 +1,10 @@
+.header-Section {
+  display: flex; /* Enables Flexbox */
+  align-items: center; /* Vertically center items */
+  justify-content: space-between; /* Space out logo and Nav */
+  width: 1240px; /* Maintain the header width */
+  height: 68px; /* Maintain the header height */
+  padding: 0 20px; /* Add padding for inner spacing */
+  box-sizing: border-box; /* Include padding in width calculation */
+  margin-bottom: 30px;
+}/*# sourceMappingURL=Header.css.map */

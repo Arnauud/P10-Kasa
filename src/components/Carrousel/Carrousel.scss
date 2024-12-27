@@ -1,0 +1,66 @@
+@import '../../style/mixin';
+@import '../../style/variables';
+
+.Gallery {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .gallery-image {
+    width: 100%;
+    max-width: 1240px; // Default size
+    max-height: 415px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+
+  // Responsive mixin for `.gallery-image`
+  @include responsive($breakpoint) {
+    .gallery-image {
+      width: 325px; // Adjusted size for smaller screens
+      height: 255px;
+    }
+  }
+
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%; /* Optional: for circular buttons */
+    width: 48px;
+    height: 79px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 100%; // Ensures the arrow image adjusts properly
+      height: auto;
+    }
+  }
+
+  // Responsive mixin for `.button`
+  @include responsive($breakpoint) {
+    button {
+      width: 30px; /* Adjusted size for smaller screens */
+      height: 30px;
+      font-size: 18px;
+    }
+  }
+
+  .prev-arrow {
+    right: 87%; /* Center-left position relative to the image */
+  }
+
+  .next-arrow {
+    left: 87%; /* Center-right position relative to the image */
+  }
+}

@@ -1,0 +1,17 @@
+@use "../components/Header/Header.scss";
+@use "../components/Nav/Nav.scss";
+@use "../components/Banner/banner.scss";
+@use "../components/Footer/Footer.scss";
+@use "../components/HouseCard/houseCard.scss";
+@use "../components/Banner/BannerAbout/BannerAbout.scss";
+@use "../components/Collapse/Collapse.scss";
+@use "../components/Carrousel/Carrousel.scss";
+
+
+
+@use "../pages/Logement/logements.scss";
+@use "../pages/Error/error.scss";
+@use "../pages/About/about.scss";
+
+@use "../style/mixin.scss";
+@use '../style/variables.scss'

@@ -1,0 +1,122 @@
+@import '../../style/mixin';
+@import '../../style/variables';
+
+.collapse-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  max-width: 582px;
+  padding: 10px 20px 10px 10px;
+  background-color: #FF6060;
+  border-radius: 8px;
+  color: white;
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 0px;
+  transition: background-color 0.3s ease; /* Hover effect */
+
+  &:hover {
+    background-color: darken(#FF6060, 10%);
+  }
+
+  .arrow {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    transition: transform 1s ease; /* Smooth arrow rotation */
+
+    .arrow-icon {
+      width: 24px; /* Adjust size of the arrow icon */
+      height: 13px;
+    }
+
+    &.open {
+      transform: rotate(180deg); /* Rotate arrow when open */
+    }
+  }
+}
+
+.collapse-content-wrapper {
+  overflow: hidden; /* Prevent overflow when collapsed */
+  transition: height 0.5s ease-in-out; /* Smooth height transition */
+  height: 0; /* Collapsed height */
+
+  &.open {
+    height: auto; /* Allow content to expand dynamically */
+  }
+}
+
+.collapse-content {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: black;
+  background-color: #F6F6F673;
+  border-radius: 8px;
+  line-height: 1.5; /* Adjusted for better readability */
+  padding: 10px;
+  margin: 0;
+  list-style-type: none; /* Remove bullet points for lists */
+  transition: opacity 0.5s ease-in-out; /* Smooth fade-in effect */
+  opacity: 0; /* Initially invisible */
+  visibility: hidden; /* Ensure it's not interactable when collapsed */
+
+  &.open {
+    opacity: 1; /* Fully visible when expanded */
+    visibility: visible;
+  }
+
+  ul {
+    margin: 0;
+    padding: 10px;
+    list-style-type: none;
+    line-height: 24px;
+  }
+
+  li {
+    margin-left: 1.5rem;
+  }
+}
+
+.about-Values {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .collapse-container {
+    width: 70%;
+
+    @include responsive($breakpoint) {
+      width: 89%;
+    }
+
+    .collapse-header {
+      margin: 30px 0 0 0;
+      max-width: initial;
+      padding: 15px 20px;
+
+      @include responsive($breakpoint) {
+        padding: 7px 20px;
+      }
+    }
+
+    .collapse-content {
+      margin: 0;
+      overflow: hidden; /* Prevent overflow when collapsed */
+
+      /* Default state */
+      max-height: 0;
+      opacity: 0;
+      visibility: hidden;
+      transition: max-height 0.5s ease, opacity 0.5s ease, visibility 0.5s ease;
+
+      /* Expanded state */
+      &.open {
+        max-height: 1000px; /* Large enough for most content */
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+}

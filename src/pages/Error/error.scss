@@ -1,0 +1,57 @@
+@import '../../style/mixin';
+@import '../../style/variables';
+
+
+.error-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Montserrat';
+    color: $primary-color;
+
+    .error-404 {
+
+        font-size: 288px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 50px;
+
+    
+
+    @include responsive($breakpoint) {
+
+        font-size: 118px;
+        line-height: 136.9px;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        margin: 100px 0 100px 0;
+    }}
+
+    .error-Message {
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 51.34px;
+        text-decoration-skip-ink: none;
+        margin-bottom: 130px;
+
+        @include responsive($breakpoint) {
+            font-size: 22px;
+            margin: 0 80px 130px 80px;
+            line-height: 30px;
+        }}
+
+        .error-homeLink {
+            font-size: 18px;
+            line-height: 25.67px;
+            text-decoration-line: underline;
+            text-decoration-style: solid;
+            color: black;
+            margin-bottom: 130px;
+
+            @include responsive($breakpoint) {
+                font-size: 14px;
+                margin-bottom: 100px;
+            }
+        }
+    
+}

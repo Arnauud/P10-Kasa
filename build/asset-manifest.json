@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d958db8d.css",
+    "main.js": "/static/js/main.31089801.js",
+    "static/media/bannerAbout.png": "/static/media/bannerAbout.267ac2c290cc7501e1c1.png",
+    "static/media/backgroundBanner.png": "/static/media/backgroundBanner.9a0b9b384459e705d7c3.png",
+    "static/media/logokasa.svg": "/static/media/logokasa.69a3df082e3c5a974ce0abfe5dc4be4e.svg",
+    "static/media/ColoredStar.svg": "/static/media/ColoredStar.30b8963e66a47777ef47296f505567be.svg",
+    "static/media/Star.svg": "/static/media/Star.68fd8a1ead5375bd59bb6ae0b633ffd3.svg",
+    "index.html": "/index.html",
+    "static/media/rightArrow.svg": "/static/media/rightArrow.88153a5d119c2744ffe34dca1ef843df.svg",
+    "static/media/leftarrow.svg": "/static/media/leftarrow.19918a1634b1441a25ae0b50e6b1f85b.svg",
+    "main.d958db8d.css.map": "/static/css/main.d958db8d.css.map",
+    "main.31089801.js.map": "/static/js/main.31089801.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d958db8d.css",
+    "static/js/main.31089801.js"
+  ]
+}

@@ -1,0 +1,21 @@
+.nav-Section {
+  display: flex; /* Enables Flexbox for navigation items */
+  gap: 20px; /* Adds space between navigation items */
+}
+
+.nav-Menu {
+  display: flex; /* Enables Flexbox for individual text items */
+  gap: 20px; /* Adds space between "Accueil" and "A Propos" */
+  background-color: blue;
+}
+
+.Home-text, .About-text {
+  font-size: 1rem; /* Adjust font size */
+  color: #333; /* Set text color */
+  cursor: pointer; /* Add a pointer cursor for better UX */
+  text-decoration: none; /* Ensure no underlines by default */
+}
+
+.Home-text:hover, .About-text:hover {
+  text-decoration: underline; /* Change color on hover for interactivity */
+}/*# sourceMappingURL=nav.css.map */

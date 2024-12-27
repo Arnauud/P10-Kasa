@@ -1,0 +1,23 @@
+@import '../../style/mixin';
+@import '../../style/variables';
+
+.header-Section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1240px;
+  height: 68px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin: 30px 7% 30px 7%;
+}
+
+@include responsive($breakpoint) {
+  .header-Section {
+    margin: 10px;
+    img {
+      width: 145px;
+      height: 46.88px;
+    }
+  }
+}

@@ -1,0 +1,194 @@
+@import '../../style/mixin';
+@import '../../style/variables';
+
+
+.housing-container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+
+  @include responsive($breakpoint) {
+    display: initial;
+  }
+
+
+  .housing-title-location-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    @include responsive($breakpoint) {
+      min-width: 335px;
+      margin-left: 5.5%;
+      margin-right: 5.5%;
+    }
+
+
+    .housing-title {
+      color: $primary-color;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 36px;
+      font-weight: 500;
+      line-height: 51px;
+      margin-bottom: 0;
+
+      @include responsive($breakpoint) {
+        width: 335px;
+        height: 46px;
+        font-size: 18px;
+        line-height: 23px;
+      }
+    }
+
+    .housing-location {
+      color: black;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      margin-top: 10px;
+
+      @include responsive($breakpoint) {
+        font-size: 14px;
+      }
+    }
+
+    .housing-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+
+      @include responsive($breakpoint) {
+        max-width: 375px;
+        width: 100%;
+      }
+
+
+      .tag-name {
+        padding: 5px 10px;
+        min-width: 115px;
+        height: 25px;
+        border-radius: 10px;
+        background-color: #FF6060;
+        color: white;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include responsive($breakpoint) {
+          min-width: 84px;
+          height: 18px;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+
+  .housing-host-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    margin-top: 20px;
+
+    @include responsive($breakpoint) {
+      flex-direction: row-reverse;
+      display: flex;
+      align-items: center;
+      gap: 21%
+    }
+
+    .housing-host-name-picture {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      @include responsive($breakpoint) {
+        display: flex;
+        gap: 0;
+        align-items: initial;
+      }
+
+      p {
+        color: $primary-color;
+        font-family: Montserrat, sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+
+        @include responsive($breakpoint) {
+          font-size: 12px;
+          width: 47px;
+          height: 33px;
+          margin-top: 4px;
+          margin-right: 5px;
+        }
+      }
+
+      img {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+
+        @include responsive($breakpoint) {
+          width: 32px;
+          height: 32px;
+        }
+      }
+    }
+
+    .housing-host-rating {
+      display: flex;
+      gap: 17px;
+      margin-top: 25px;
+
+      @include responsive($breakpoint) {
+        display: flex;
+        gap: 7px;
+        margin: 0;
+      }
+
+      .star-image {
+        width: 24px;
+        height: 24px;
+        gap: 5px;
+
+        @include responsive($breakpoint) {
+          width: 18px;
+          gap: 5px;
+        }
+
+      }
+    }
+  }
+}
+
+/* New row for collapse sections */
+.housing-collapse-container {
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+
+  @include responsive($breakpoint) {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+
+  }
+}
+
+.collapse-container {
+  width: 582px;
+
+  @include responsive($breakpoint) {
+    width: 89.34%;
+  }
+}
