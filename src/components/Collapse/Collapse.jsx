@@ -30,7 +30,7 @@ function Collapse({ title, description, equipments, text, type }) {
       >
         <div
           className="collapse-content open"
-          ref={contentRef} // Attach the ref here
+          ref={contentRef} 
         >
           {/* Dynamically render content based on provided props */}
           {type === 'description' && <p>{description}</p>}

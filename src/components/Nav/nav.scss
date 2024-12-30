@@ -2,28 +2,28 @@
 @import '../../style/variables';
 
 .nav-Section {
-    display: flex; /* Enables Flexbox for navigation items */
-    gap: 20px; /* Adds space between navigation items */
-  }
+    display: flex;
+    gap: 20px; 
   
   .nav-Menu {
-    display: flex; /* Enables Flexbox for individual text items */
-    gap: 20px; /* Adds space between "Accueil" and "A Propos" */
+    display: flex; 
+    gap: 20px; 
     // background-color: blue;
   }
   
   .Home-text, .About-text {
-    font-size: 1rem; /* Adjust font size */
-    color: #333; /* Set text color */
-    cursor: pointer; /* Add a pointer cursor for better UX */
-    text-decoration: none; /* Ensure no underlines by default */
+    font-size: 1rem; 
+    color: #333; 
+    cursor: pointer; 
+    text-decoration: none; 
     @include responsive($breakpoint) {
-        font-size: 12px; /* Adjust font size */
+        font-size: 12px; 
       }
     
   }
   
   .Home-text:hover, .About-text:hover {
-    text-decoration: underline; /* Change color on hover for interactivity */
+    text-decoration: underline; 
   }
 
+}

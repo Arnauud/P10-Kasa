@@ -7,6 +7,16 @@
   justify-content: center;
   align-items: center;
 
+  .gallery-counter{
+    position: absolute;
+    color: white;
+    bottom: 10px; 
+    left: 50%;
+    @include responsive($breakpoint) {
+      display: none;
+    }
+  }
+
   .gallery-image {
     width: 100%;
     max-width: 1240px; // Default size

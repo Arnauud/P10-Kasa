@@ -109,7 +109,7 @@
       max-height: 0;
       opacity: 0;
       visibility: hidden;
-      transition: max-height 0.5s ease, opacity 0.5s ease, visibility 0.5s ease;
+      transition: max-height 0.5s ease, opacity 0.5s ease, visibility 3.5s ease;
 
       /* Expanded state */
       &.open {

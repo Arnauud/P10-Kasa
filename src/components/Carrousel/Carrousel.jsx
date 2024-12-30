@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import rightArrow from '../../assets/rightArrow.svg';
 import leftArrow from '../../assets/leftarrow.svg';
 function Carrousel({ pictures }) {
-  const [currentIndex, setCurrentIndex] = useState(3);
+  const [currentIndex, setCurrentIndex] = useState(2);
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % pictures.length);
@@ -21,6 +21,9 @@ function Carrousel({ pictures }) {
       />
       {pictures.length > 1 && (
         <>
+          <div className="gallery-counter">
+            {currentIndex + 1}/{pictures.length}
+          </div>
           <button className="prev-arrow" onClick={handlePrev}>
             <img src={leftArrow} alt="Previous" />
           </button>

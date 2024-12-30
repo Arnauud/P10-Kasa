@@ -4,7 +4,7 @@ import Header from '../../components/Header/Header';
 import Carrousel from '../../components/Carrousel/Carrousel';
 import ColorStar from '../../assets/ColoredStar.svg'
 import Star from '../../assets/Star.svg'
-import {Collapse} from '../../components/Collapse/Collapse';
+import { Collapse } from '../../components/Collapse/Collapse';
 import Footer from '../../components/Footer/Footer'
 import Error from '../Error/Error';
 
